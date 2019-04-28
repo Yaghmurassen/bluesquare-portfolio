@@ -1,0 +1,85 @@
+.footer {
+  display: flex;
+  height: 295px;
+  background-color: #eff4fc;
+  margin-top: 30px;
+  padding-top: 98px;
+
+  div { flex-grow: 1; }
+
+  .logo-container
+  {
+    display: flex;
+    margin-left: 188px;
+
+    div p:first-child { color: #0079ff; font-size: 16px; margin: 16px 0 0 0; }
+    div p:last-child { color : #b4b4b4; font-size: 16px; margin: 0; }
+  }
+
+  .copyright { color: #b4b4b4; font-size: 14px; margin: 150px 0 0 200px; }
+
+  .list-components
+  {
+    list-style-type: none;
+    font-size: 16px;
+    text-align: left;
+
+    li
+    {
+      margin-top: 20px;
+      a { color: #b4b4b4; text-decoration: none; }
+    }
+  }
+
+  .recrutement
+  {
+    color: #b4b4b4;
+    font-size: 14px;
+    text-align: center;
+
+    a { margin: 20px auto; }
+  }
+
+  .contact-us
+  {
+    text-align: center;
+
+    .link { color: #157dfb; text-decoration: none; font-size: 16px; }
+
+    .fa-linkedin { font-size: 30px; color: #157dfb; }
+  }
+
+  @media screen and (max-width: 975px) {
+    & {
+      display: block;
+      position: relative;
+
+      .logo-container { left: calc(50% - 188px); }
+      .responsive-footer { display: none; }
+      //.copyright { margin-top: 150px; }
+      .contact-us
+      {
+        position: absolute;
+        bottom: 100px;
+        left: calc(50% - 150px);
+        //display: flex;
+
+        .link { font-size: 20px; margin-left: 40px; }
+        .fa-linkedin { font-size: 40px; margin-left: 15px; }
+      }
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    & {
+      padding-top: 40px;
+      margin-top: 0px;
+
+      .logo-container {
+        margin-left: 50px;
+      }
+
+      .copyright { margin-left: 60px; }
+    }
+  }
+}

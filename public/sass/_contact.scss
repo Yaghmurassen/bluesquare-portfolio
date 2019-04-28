@@ -1,0 +1,114 @@
+.contact {
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+
+  .title {
+    flex-grow: 1;
+    padding-left: 100px;
+
+    h3 {
+      color: #0079ff;
+      font-size: 48px;
+      padding: 0 5px;
+    }
+    p {
+      color: #9fa7bb;
+      font-size: 18px;
+    }
+  }
+
+  .background-contact {
+    flex-grow: 1;
+    height: 459px;
+    width: 745px;
+    max-width: 745px;
+    margin-left: 200px;
+
+    .img-background {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      height: 100%; width: 100%;
+      position: absolute;
+      max-width: 745px;
+      max-height: 459px;
+    }
+
+    .form-contact {
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+      padding: 50px 0 0 100px;
+
+      input, textarea {
+        width: 395px;
+        height: 31px;
+        display: block;
+        margin: 30px 0;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 14px;
+
+        &::placeholder {
+          color: white;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 109px;
+        height: 36px;
+        box-shadow: 7px 7px 25px 0 rgba(180, 180, 180, 0.19);
+        position: absolute;
+        bottom: -50px; right: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 975px) {
+    & {
+      margin-top: 100px;
+      display: block;
+
+      .title {
+        text-align: center;
+
+        p {
+          padding: 0 20px 0 20px;
+        }
+      }
+
+      .background-contact {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    & {
+      .title { padding-left: 0; }
+      .background-contact {
+        margin-left: 0;
+        height: 430px;
+        max-width: unset;
+
+        .img-background {
+          width: 120%;
+          max-width: unset;
+          left: -50px;
+        }
+
+        .form-contact {
+          padding-left: 20px !important;
+
+          input { width: 340px; }
+
+          .bluesquare-btn { right: 55px; }
+        }
+      }
+    }
+  }
+}

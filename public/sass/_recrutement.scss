@@ -1,0 +1,129 @@
+.recrutement {
+  .presentation {
+    margin-top: 150px;
+    display: flex;
+
+    .img-container {
+      margin: 0 79px 0 65px;
+      position: relative;
+      top: -50px;
+      max-height: 336px;
+
+      img:first-child { height: 336px; width: 504px; }
+    }
+    .content-container {
+      margin: 0 100px;
+
+      h3 { font-size: 50px; color: #1d2a49; margin-top: -56px; }
+      p { color: #9ea6bc; }
+
+      ul { margin-left: 50px; }
+
+      //.information { margin-left: 90px; }
+    }
+
+    @media screen and (max-width: 975px) {
+      & { display: block; margin: 50px 50px 0 50px; }
+
+      .img-container { display: none; }
+
+      .content-container {
+        width: 100%;
+        text-align: center;
+        margin: unset;
+
+        ul { text-align: left; margin-left: unset; }
+
+        .information { margin-left: unset; }
+      }
+    }
+  }
+
+  .offres {
+    margin-top: 150px;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 7px 7px 18px 0 #c1ccde;
+    background-image: linear-gradient(to bottom, rgba(195, 0, 188, 0.15), rgba(195, 0, 188, 0.15)), linear-gradient(109deg, #157dfb, #05d5d0);
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+
+    .items {
+      width: calc(80% / 3);
+      height: 324px;
+      margin-left: 26px;
+      text-align: left;
+      box-shadow: 5px 4px 22px -15px rgba(103, 117, 130, 0.86);
+      background-color: #ffffff;
+      border-radius: 5px;
+      align-self: center;
+      position: relative;
+
+      .title { font-size: 23px; color: #333333; margin: 30px 0 0 30px; }
+      .subtitle { font-size: 18px; color: #157dfb; margin: 5px 0 10px 30px; }
+      .content { font-size: 14px; color: #b4b4b4; margin: 20px 30px 0 30px; }
+      .link-to
+      {
+        position: absolute;
+        bottom: 24px; right: 37px;
+      }
+      .email { text-align: center; }
+      a { color: #157dfb; font-size: 16px; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    }
+
+    @media screen and (max-width: 975px) {
+      & { flex-wrap: wrap; }
+      .items
+      {
+        height: 180px;
+        width: 100%;
+        display: block;
+        margin: 20px 50px;
+
+        .content { display: none; }
+      }
+
+      .items:last-child { margin-bottom: 20px; }
+    }
+
+    @media screen and (max-width: 414px) {
+        padding: 50px 0;
+    }
+  }
+
+  .process {
+    display: flex;
+    margin-top: 100px;
+
+    h2 { font-size: 48px; color: #1e2b47; }
+    h3 { font-size: 26px; color: #1e2b47; }
+    p { font-size: 16px; color: #838a9b; }
+
+    .container-left {
+      margin: 0 80px;
+    }
+
+    .container-right {
+
+      .img-right { width: 621px; height: 414px; }
+      .content { margin-right: 150px; }
+    }
+
+    @media screen and (max-width: 975px) {
+      & {
+        display: block;
+        text-align: center;
+
+        .container-left, .container-right { margin: 0 50px 0 50px; }
+        .container-right {
+          .content { margin-right: unset; }
+          .img-right { width: 100%; height: 200px; }
+        }
+
+        ul { text-align: left; }
+      }
+    }
+  }
+}

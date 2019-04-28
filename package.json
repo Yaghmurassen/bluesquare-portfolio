@@ -1,0 +1,51 @@
+{
+  "name": "bluesquare-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "es6-promise": "^4.2.6",
+    "gulp-cli": "^2.1.0",
+    "parallax-js": "^3.1.0",
+    "react": "^16.8.6",
+    "react-burger-menu": "^2.6.8",
+    "react-burgers": "^1.2.0",
+    "react-dom": "^16.8.6",
+    "react-full-screen": "^0.2.4",
+    "react-load-script": "0.0.6",
+    "react-parallax": "^2.2.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-scroll-parallax": "^2.1.2",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-slick": "^0.23.2",
+    "react-sticky-header": "^0.2.0",
+    "reactstrap": "^7.1.0",
+    "sass": "^1.17.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.1.0",
+    "t-scroll": "github:crazychicken/t-scroll"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  }
+}

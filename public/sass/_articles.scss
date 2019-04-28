@@ -1,0 +1,124 @@
+.articles {
+  margin-top: 100px;
+
+  .title
+  {
+    h3 { font-size: 48px; text-align: center; color: #333333; }
+  }
+
+  .articles-container
+  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    .article
+    {
+      width: 492px; height: 147px;
+      box-shadow: 7px 7px 25px 0 rgba(180, 180, 180, 0.19);
+      margin: 50px 50px;
+      background: white;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+
+        .article-picture { width: 176px; height: 147px; }
+        h3 { color: #1e2b47; font-size: 20px; }
+        p {
+          color: #b4b4b4;
+          font-size: 16px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 300px;
+          margin: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1385px) {
+      & {
+        .article {
+            margin: 20px 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1183px) {
+      & {
+        justify-content: center;
+      }
+    }
+
+    @media screen and (max-width: 414px) {
+      & {
+        padding: 0 12px;
+        .article {
+          margin: 20px 5px;
+          div { display: inline-block; }
+          a {
+            .article-picture { width: 123px; height: 89px; }
+
+            h3 { margin-top: 34px; margin-bottom: 45px; }
+
+            h3.longText { margin-top: 20px; margin-bottom: 30px; }
+
+            p { margin: 0 10px 0 -100px; }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      & {
+        .article {
+          a {
+            h3 { margin-bottom: 25px; }
+          }
+        }
+      }
+    }
+
+    //.article:hover { text-decoration: underline; }
+  }
+
+  .btn-container
+  {
+    position: relative;
+
+    button { position: absolute; right: 200px; top: 20px; width: 227px; height: 48px; }
+  }
+}
+
+.show-article {
+  .article {
+    display: flex;
+    text-align: center;
+    margin-top: 150px;
+
+    .background-article {
+      width: 400px;
+      height: 300px;
+      margin-left: 50px;
+      border-radius: 5px;
+    }
+
+    .content {
+      margin: 0 50px 0 50px;
+
+      h3 { font-size: 26px; color: #1e2b47; }
+      p { font-size: 16px; color: #838a9b; }
+    }
+
+    @media screen and (max-width: 975px) {
+      & {
+        display: block;
+
+        .background-square-1 { display: none; }
+      }
+    }
+  }
+}
